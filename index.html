@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-6 mx-auto my-auto border rounded">
+                <h3 class="display-4 text-center mb-2">Registration Form</h3>
+                <form action="ThankYou.html" onsubmit="return validate();">
+                <div class="mb-1">
+                    <label for="name">Name <span class="text-danger">*</span></label>
+                    <input type="text" name="name" id="name" class="form-control">
+                    <label for="name_error" id="name_error" class="text-danger"></label>
+                </div>
+                <div class="mb-1">
+                    <label for="gender">Gender  <span class="text-danger">*</span></label>
+                    <input type="radio" name="gender" id="male" class="form-check-input">Male
+                    <input type="radio" name="gender" id="female" class="form-check-input">Female
+                    <input type="radio" name="gender" id="other" class="form-check-input">Other
+                    <br>
+                    <label for="gender_error" id="gender_error" class="text-danger"></label>
+                </div>
+                <div class="mb-1">
+                    <label for="branch">Branch <span class="text-danger">*</span></label>
+                    <select name="branch" id="branch" class="form-select">
+                        <option value="">--Select--</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EIE">EIE</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                    <label for="branch_error" id="branch_error" class="text-danger"></label>
+                </div>
+                <div class="mb-1">
+                    <label for="mobile">Mobile <span class="text-danger">*</span></label>
+                    <input type="tel" name="mobile" id="mobile" class="form-control">
+                    <label for="mobile_error" id="mobile_error" class="text-danger"></label>
+                </div>
+                <div class="mb-1">
+                    <label for="email">Email <span class="text-danger">*</span></label>
+                    <input type="email" name="email" id="email" class="form-control">
+                    <label for="email_error" id="email_error" class="text-danger"></label>
+                </div>
+                <div class="mb-1">
+                    <label for="password">Password <span class="text-danger">*</span></label>
+                    <p><small class="text-muted" >Your password should be 8 - 16 character long and should contain atleast one uppercase, one lowercase, one special character, and a number.</small></p>
+                    <input type="password" name="password" id="password" class="form-control">
+                    <label for="password_error" id="password_error" class="text-danger"></label>
+                </div>
+                <div class="mb-1">
+                    <label for="password2">Confirm Password <span class="text-danger">*</span></label>
+                    <input type="password" name="password2" id="password2" class="form-control">
+                    <label for="password2_error" id="password2_error" class="text-danger"></label>
+                </div>
+                <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto natus, nobis officiis odio quos laborum rem tenetur laboriosam error quibusdam numquam. Animi qui libero enim ex at impedit vel perferendis quo accusamus.</small></p>
+                <input type="checkbox" name="term" id="term">I Agree
+                <br>
+                <label for="term_error" id="term_error" class="text-danger"></label>
+                <input type="submit" value="Register" class="btn btn-primary w-100 my-2">
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- Custom JS -->
+    <script src="js/validator.js"></script>
+    <!-- BSS JS -->
+    <script src="bs/bootstrap.bundle.js"></script>
+</body>
+</html>
